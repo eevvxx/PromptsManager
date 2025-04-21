@@ -1,0 +1,18 @@
+# Add folders and file to .gitignore
+echo "UserDoc/" >> .gitignore
+echo "Template/" >> .gitignore
+echo ".user_backup/" >> .gitignore
+echo "backup_4.7.py" >> .gitignore
+
+# Untrack if already tracked
+git rm -r --cached UserDoc
+git rm -r --cached Template
+git rm -r --cached .user_backup
+git rm --cached backup_4.7.py
+
+# Commit changes
+git add .gitignore
+git commit -m "Add UserDoc, Template, .user_backup folder and backup_4.7.py to .gitignore"
+
+# Push to GitHub
+git push origin main
