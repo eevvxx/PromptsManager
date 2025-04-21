@@ -1,0 +1,1 @@
+1. the title bar Editor Maximus button not work correct.
